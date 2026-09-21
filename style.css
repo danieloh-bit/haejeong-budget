@@ -36,3 +36,16 @@
     width:100%;border-radius:16px;margin:8px auto 14px;
   }
 }
+
+/* v1.1.7: user-provided 938x532 image, no cropping on welcome or home. */
+.princess-main-hero,.princess-welcome .princess-main-hero{
+  width:100%;max-width:100%;height:auto;aspect-ratio:938 / 532;
+  margin:12px auto 20px;padding:0;overflow:hidden;
+  border:1px solid #f4abc9;border-radius:18px;background:#ffe8f1;
+  box-shadow:0 9px 26px rgba(166,55,105,.16);
+}
+.princess-main-hero img,.princess-welcome .princess-main-hero img{
+  display:block;width:100%;height:auto;aspect-ratio:938 / 532;
+  object-fit:contain;object-position:center;border:0;border-radius:0;filter:none;
+}
+.princess-welcome .princess-main-hero{margin:0 auto 8px;}
